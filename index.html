@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bocatto criollo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Bocatto criollo</h1>
+            <nav>
+                <button onclick="agregarProducto()"><i class="fas fa-plus"></i> Agregar Producto</button>
+                <button onclick="realizarVenta()"><i class="fas fa-cash-register"></i> Realizar Venta</button>
+                <button onclick="abastecerCocina()"><i class="fas fa-utensils"></i> Abastecer Cocina</button>
+                <button onclick="verInventario()"><i class="fas fa-clipboard-list"></i> Inventario</button>
+                <button onclick="verVentas()"><i class="fas fa-chart-line"></i> Ventas</button>
+            </nav>
+        </header>
+        <main>
+            <section id="mesas">
+                <h2>Mesas</h2>
+                <div id="grid-mesas"></div>
+            </section>
+        </main>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-title"></h2>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
